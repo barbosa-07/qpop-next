@@ -25,8 +25,7 @@ export default function RootLayout({ children }) {
       <Head></Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
-          strategy="afterInteractive"
-          id="wisppop-widget"
+          id="qpop-widget"
           data-uid="67260ecafd2aa475def08604"
           src="https://widget.qpop.xyz/iframe-loader.js"
         ></Script>
