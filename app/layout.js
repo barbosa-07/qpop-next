@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Head from "next/head";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +22,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head></Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Script
+          id="wisppop-widget"
+          data-uid="67260ecafd2aa475def08604"
+          src="https://widget.qpop.xyz/iframe-loader.js"
+        ></Script>
         {children}
       </body>
     </html>
